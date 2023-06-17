@@ -7,7 +7,7 @@ export const Page = (pageProps: PageProps) => {
   return (
     <section className='max-w-4xl mx-auto w-full'>
       <Link className='text-2xl font-bold w-full hover:text-gray-400 transition-colors duration-300 ease-in-out' href='/'>
-        GitHub Search
+        GitHub User & Repository Search
       </Link>
       <header className='flex mt-10 flex-col w-full p-6 rounded-4 bg-zinc-800'>
         <div className='flex items-center justify-evenly'>
