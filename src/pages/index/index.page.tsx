@@ -66,6 +66,7 @@ export const Page = () => {
           value={search}
           onChange={handleChange}
         />
+        <br>
         <p className="text-xs text-neutral-700 mt-4">
           Click on a user to view their GitHub profile.
           <br />
