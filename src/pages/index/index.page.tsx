@@ -46,6 +46,11 @@ export const Page = () => {
     <div className={results.length > 0 ? 'w-full -translate-y-40 transition-transform duration-200 ease-in-out' : 'w-full transition-transform duration-200 ease-in-out'}>
       <h2 className="mx-auto w-fit font-bold text-6xl mb-10">GitHub User & Repository</h2>
       <div className="flex items-center rounded-lg bg-zinc-200 max-w-3xl sm:max-w-4/6 mx-auto overflow-hidden">
+        <p className="text-xxs text-neutral-700 mt-4">
+          Click on a user to view their GitHub profile.
+          <br />
+          Click on a repository to view more details about the project.
+        </p>
         <button
           className="text-xl px-4 py-2 bg-zinc-300 hover:bg-zinc-400 transition-colors duration-300 ease-in-out text-neutral-900"
           onClick={() => { 
@@ -66,7 +71,6 @@ export const Page = () => {
           value={search}
           onChange={handleChange}
         />
-        <br>
         <p className="text-xs text-neutral-700 mt-4">
           Click on a user to view their GitHub profile.
           <br />
