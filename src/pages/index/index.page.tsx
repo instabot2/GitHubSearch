@@ -45,6 +45,9 @@ export const Page = () => {
   return (
     <div className={results.length > 0 ? 'w-full -translate-y-40 transition-transform duration-200 ease-in-out' : 'w-full transition-transform duration-200 ease-in-out'}>
       <h2 className="mx-auto w-fit font-bold text-6xl mb-10">GitHub Repository</h2>
+      <p className="text-sm text-neutral-700 mt-2 mb-4" style={{ fontSize: '8px' }}>
+        This search will display users and repositories for GitHub.
+      </p>
       <div className="flex items-center rounded-lg bg-zinc-200 max-w-3xl sm:max-w-4/6 mx-auto overflow-hidden">
         <button
           className="text-xl px-4 py-2 bg-zinc-300 hover:bg-zinc-400 transition-colors duration-300 ease-in-out text-neutral-900"
