@@ -4,9 +4,16 @@ import { ResultsContainer } from '@/components/resultsContainer'
 import ghLogo from '@/assets/github.svg'
 import { toast } from 'react-hot-toast'
 
-type Result = Omit<User, 'login'> & {
+//type Result = Omit<User, 'login'> & {
+//  name: string
+//} | Repository
+type Result = (Omit<User, 'login'> & {
   name: string
-} | Repository
+}) | (Repository & {
+  repositoryName: string
+  description: string
+  // Add any other properties specific to the repository
+})
 
 export const Page = () => {
   const [search, setSearch] = useState('')
