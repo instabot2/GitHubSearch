@@ -7,13 +7,22 @@ import { toast } from 'react-hot-toast'
 //type Result = Omit<User, 'login'> & {
 //  name: string
 //} | Repository
-type Result = (Omit<User, 'login'> & {
-  name: string
-}) | (Repository & {
-  repositoryName: string
-  description: string
-  // Add any other properties specific to the repository
-})
+type Repository = {
+  name: string;
+  description: string;
+  // Other properties specific to the repository
+}
+type RepositoryResult = {
+  repository: Repository;
+  repositoryName: string;
+  // Additional properties related to the repository result
+}
+type UserResult = Omit<User, 'login'> & {
+  name: string;
+  // Additional properties related to the user result
+}
+type Result = UserResult | RepositoryResult;
+
 
 export const Page = () => {
   const [search, setSearch] = useState('')
