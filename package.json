@@ -1,10 +1,10 @@
 {
-  "name": "github-search",
+  "name": "GitGubSsearch",
   "version": "0.2.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/datsfilipe/github-search.git"
+    "url": "https://github.com/instabot2/GitHubSearch"
   },
   "bugs": {
     "url": "https://github.com/datsfilipe/github-search/issues"
